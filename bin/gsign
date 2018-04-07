@@ -80,7 +80,7 @@ result['type'] = 'build'
 result['optionals'] = optionals
 
 signer = @options[:signer] or raise "must supply signer with --signer"
-program = @options[:program] || "gpg --detach-sign"
+program = @options[:program] || "gpg2 --detach-sign"
 
 FileUtils.mkdir_p(destination)
 
